@@ -12,12 +12,12 @@
 		5360ADF31E81280100C1AACB /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360ADF21E81280100C1AACB /* PresenterTests.swift */; };
 		5367C0DC1DD7C69E005B6676 /* ViperitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C641DD50DDF00088AAC /* ViperitError.swift */; };
 		5367C0DD1DD7C69E005B6676 /* ViperComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C631DD50DDF00088AAC /* ViperComponent.swift */; };
-		5367C0DE1DD7C69E005B6676 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C5F1DD50DDF00088AAC /* Module.swift */; };
-		5367C0DF1DD7C69E005B6676 /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C621DD50DDF00088AAC /* UserInterface.swift */; };
+		5367C0DE1DD7C69E005B6676 /* ViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C5F1DD50DDF00088AAC /* ViewWireframe.swift */; };
+		5367C0DF1DD7C69E005B6676 /* ViewUserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C621DD50DDF00088AAC /* ViewUserInterface.swift */; };
 		5367C0E01DD7C69E005B6676 /* DisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C5D1DD50DDF00088AAC /* DisplayData.swift */; };
-		5367C0E11DD7C69E005B6676 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C5E1DD50DDF00088AAC /* Interactor.swift */; };
-		5367C0E21DD7C69E005B6676 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C601DD50DDF00088AAC /* Presenter.swift */; };
-		5367C0E31DD7C69E005B6676 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C611DD50DDF00088AAC /* Router.swift */; };
+		5367C0E11DD7C69E005B6676 /* ViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C5E1DD50DDF00088AAC /* ViewInteractor.swift */; };
+		5367C0E21DD7C69E005B6676 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C601DD50DDF00088AAC /* ViewPresenter.swift */; };
+		5367C0E31DD7C69E005B6676 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53532C611DD50DDF00088AAC /* ViewRouter.swift */; };
 		5368EDC71E7FF91F0028D8CA /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368EDC61E7FF91F0028D8CA /* RouterTests.swift */; };
 		5368EDC91E7FF9A40028D8CA /* TestModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368EDC81E7FF9A40028D8CA /* TestModules.swift */; };
 		5368EDD11E801EDB0028D8CA /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5368EDCA1E801EDB0028D8CA /* Sample.storyboard */; };
@@ -27,7 +27,6 @@
 		5368EDD51E801EDB0028D8CA /* SampleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368EDCE1E801EDB0028D8CA /* SampleRouter.swift */; };
 		5368EDD61E801EDB0028D8CA /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368EDCF1E801EDB0028D8CA /* SampleView.swift */; };
 		5368EDD71E801EDB0028D8CA /* SampleViewPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368EDD01E801EDB0028D8CA /* SampleViewPad.swift */; };
-		5372505E1EF13500007F3A10 /* ViperitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372505D1EF13500007F3A10 /* ViperitModule.swift */; };
 		537250691EF13835007F3A10 /* CodeModuleDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537250631EF13835007F3A10 /* CodeModuleDisplayData.swift */; };
 		5372506A1EF13835007F3A10 /* CodeModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537250641EF13835007F3A10 /* CodeModuleInteractor.swift */; };
 		5372506B1EF13835007F3A10 /* CodeModuleModuleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537250651EF13835007F3A10 /* CodeModuleModuleApi.swift */; };
@@ -63,6 +62,14 @@
 		53D3AF211E07109D0099A464 /* SecondViewPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D3AF101E07109D0099A464 /* SecondViewPad.swift */; };
 		53D3AF321E0711000099A464 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D3AF311E0711000099A464 /* HomeTests.swift */; };
 		53F14AA41E7BF3D400E61452 /* Viperit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5367C0CF1DD7C68D005B6676 /* Viperit.framework */; };
+		7E9EE2DF21411E87008502DC /* ViperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE2DE21411E87008502DC /* ViperProtocol.swift */; };
+		7E9EE2E7214121BA008502DC /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE2E2214121B9008502DC /* Wireframe.swift */; };
+		7E9EE2E8214121BA008502DC /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE2E3214121B9008502DC /* UserInterface.swift */; };
+		7E9EE2E9214121BA008502DC /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE2E4214121B9008502DC /* Presenter.swift */; };
+		7E9EE2EA214121BA008502DC /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE2E5214121B9008502DC /* Interactor.swift */; };
+		7E9EE2EB214121BA008502DC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE2E6214121B9008502DC /* Router.swift */; };
+		7E9EE2ED214124FE008502DC /* ViperitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE2EC214124FE008502DC /* ViperitModule.swift */; };
+		7E9EE2EF2141252D008502DC /* ViperitViewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE2EE2141252D008502DC /* ViperitViewModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,11 +108,11 @@
 		53532C4C1DD50BD200088AAC /* ViperitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53532C521DD50BD200088AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53532C5D1DD50DDF00088AAC /* DisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayData.swift; sourceTree = "<group>"; };
-		53532C5E1DD50DDF00088AAC /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		53532C5F1DD50DDF00088AAC /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
-		53532C601DD50DDF00088AAC /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		53532C611DD50DDF00088AAC /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		53532C621DD50DDF00088AAC /* UserInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterface.swift; sourceTree = "<group>"; };
+		53532C5E1DD50DDF00088AAC /* ViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInteractor.swift; sourceTree = "<group>"; };
+		53532C5F1DD50DDF00088AAC /* ViewWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWireframe.swift; sourceTree = "<group>"; };
+		53532C601DD50DDF00088AAC /* ViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
+		53532C611DD50DDF00088AAC /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		53532C621DD50DDF00088AAC /* ViewUserInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUserInterface.swift; sourceTree = "<group>"; };
 		53532C631DD50DDF00088AAC /* ViperComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperComponent.swift; sourceTree = "<group>"; };
 		53532C641DD50DDF00088AAC /* ViperitError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperitError.swift; sourceTree = "<group>"; };
 		5360ADF21E81280100C1AACB /* PresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
@@ -119,7 +126,6 @@
 		5368EDCE1E801EDB0028D8CA /* SampleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleRouter.swift; sourceTree = "<group>"; };
 		5368EDCF1E801EDB0028D8CA /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		5368EDD01E801EDB0028D8CA /* SampleViewPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleViewPad.swift; sourceTree = "<group>"; };
-		5372505D1EF13500007F3A10 /* ViperitModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperitModule.swift; sourceTree = "<group>"; };
 		537250631EF13835007F3A10 /* CodeModuleDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeModuleDisplayData.swift; sourceTree = "<group>"; };
 		537250641EF13835007F3A10 /* CodeModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeModuleInteractor.swift; sourceTree = "<group>"; };
 		537250651EF13835007F3A10 /* CodeModuleModuleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeModuleModuleApi.swift; sourceTree = "<group>"; };
@@ -158,6 +164,14 @@
 		53D3AF261E0710E90099A464 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D3AF311E0711000099A464 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 		53D3AF331E0711AE0099A464 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E9EE2DE21411E87008502DC /* ViperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperProtocol.swift; sourceTree = "<group>"; };
+		7E9EE2E2214121B9008502DC /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		7E9EE2E3214121B9008502DC /* UserInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterface.swift; sourceTree = "<group>"; };
+		7E9EE2E4214121B9008502DC /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		7E9EE2E5214121B9008502DC /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		7E9EE2E6214121B9008502DC /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7E9EE2EC214124FE008502DC /* ViperitModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperitModule.swift; sourceTree = "<group>"; };
+		7E9EE2EE2141252D008502DC /* ViperitViewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperitViewModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,15 +266,12 @@
 		53532C5C1DD50DDF00088AAC /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7E9EE2E12141219C008502DC /* UIViewController */,
+				7E9EE2E021412194008502DC /* UIView */,
 				53532C641DD50DDF00088AAC /* ViperitError.swift */,
 				53532C631DD50DDF00088AAC /* ViperComponent.swift */,
-				5372505D1EF13500007F3A10 /* ViperitModule.swift */,
-				53532C5F1DD50DDF00088AAC /* Module.swift */,
-				53532C621DD50DDF00088AAC /* UserInterface.swift */,
+				7E9EE2DE21411E87008502DC /* ViperProtocol.swift */,
 				53532C5D1DD50DDF00088AAC /* DisplayData.swift */,
-				53532C5E1DD50DDF00088AAC /* Interactor.swift */,
-				53532C601DD50DDF00088AAC /* Presenter.swift */,
-				53532C611DD50DDF00088AAC /* Router.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -379,6 +390,32 @@
 				53D3AF331E0711AE0099A464 /* Info.plist */,
 			);
 			path = ExampleTests;
+			sourceTree = "<group>";
+		};
+		7E9EE2E021412194008502DC /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				53532C5E1DD50DDF00088AAC /* ViewInteractor.swift */,
+				53532C5F1DD50DDF00088AAC /* ViewWireframe.swift */,
+				53532C621DD50DDF00088AAC /* ViewUserInterface.swift */,
+				53532C601DD50DDF00088AAC /* ViewPresenter.swift */,
+				53532C611DD50DDF00088AAC /* ViewRouter.swift */,
+				7E9EE2EE2141252D008502DC /* ViperitViewModule.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		7E9EE2E12141219C008502DC /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E9EE2E5214121B9008502DC /* Interactor.swift */,
+				7E9EE2E2214121B9008502DC /* Wireframe.swift */,
+				7E9EE2E4214121B9008502DC /* Presenter.swift */,
+				7E9EE2E6214121B9008502DC /* Router.swift */,
+				7E9EE2E3214121B9008502DC /* UserInterface.swift */,
+				7E9EE2EC214124FE008502DC /* ViperitModule.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,13 +655,20 @@
 				5367C0DC1DD7C69E005B6676 /* ViperitError.swift in Sources */,
 				53D3AEF61E0709A80099A464 /* String+.swift in Sources */,
 				5367C0DD1DD7C69E005B6676 /* ViperComponent.swift in Sources */,
-				5367C0DE1DD7C69E005B6676 /* Module.swift in Sources */,
-				5367C0DF1DD7C69E005B6676 /* UserInterface.swift in Sources */,
+				5367C0DE1DD7C69E005B6676 /* ViewWireframe.swift in Sources */,
+				7E9EE2DF21411E87008502DC /* ViperProtocol.swift in Sources */,
+				7E9EE2E7214121BA008502DC /* Wireframe.swift in Sources */,
+				7E9EE2E8214121BA008502DC /* UserInterface.swift in Sources */,
+				5367C0DF1DD7C69E005B6676 /* ViewUserInterface.swift in Sources */,
+				7E9EE2EB214121BA008502DC /* Router.swift in Sources */,
+				7E9EE2E9214121BA008502DC /* Presenter.swift in Sources */,
 				5367C0E01DD7C69E005B6676 /* DisplayData.swift in Sources */,
-				5367C0E11DD7C69E005B6676 /* Interactor.swift in Sources */,
-				5367C0E21DD7C69E005B6676 /* Presenter.swift in Sources */,
-				5367C0E31DD7C69E005B6676 /* Router.swift in Sources */,
-				5372505E1EF13500007F3A10 /* ViperitModule.swift in Sources */,
+				7E9EE2ED214124FE008502DC /* ViperitModule.swift in Sources */,
+				7E9EE2EF2141252D008502DC /* ViperitViewModule.swift in Sources */,
+				5367C0E11DD7C69E005B6676 /* ViewInteractor.swift in Sources */,
+				5367C0E21DD7C69E005B6676 /* ViewPresenter.swift in Sources */,
+				7E9EE2EA214121BA008502DC /* Interactor.swift in Sources */,
+				5367C0E31DD7C69E005B6676 /* ViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

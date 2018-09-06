@@ -8,22 +8,28 @@
 
 import UIKit
 
-public protocol RouterProtocol {
-    var _presenter: Presenter! { get set }
-    var _view: UserInterface! { get }
-    
-    func show(inWindow window: UIWindow?, embedInNavController: Bool, setupData: Any?, makeKeyAndVisible: Bool)
-    func show(from: UIViewController, embedInNavController: Bool, setupData: Any?)
-    func show(from containerView: UIViewController, insideView targetView: UIView, setupData: Any?)
-}
-
 open class Router: RouterProtocol {
-    public weak var _presenter: Presenter!
-    public var _view: UserInterface! {
+    public typealias P = Presenter
+    public typealias V = UserInterface
+
+    public weak var _presenter: P!
+    public var _view: V! {
         return _presenter._view
     }
-    
-    open func show(inWindow window: UIWindow?, embedInNavController: Bool = false, setupData: Any? = nil, makeKeyAndVisible: Bool = true) {
+    required public init() {}
+}
+
+
+public extension RouterProtocol {
+    func process(setupData: Any?) {
+        if let data = setupData {
+            _presenter.setupView(data: data)
+        }
+    }
+}
+
+public extension RouterProtocol where V == UserInterface {
+    public func show(inWindow window: UIWindow?, embedInNavController: Bool = false, setupData: Any? = nil, makeKeyAndVisible: Bool = true) {
         process(setupData: setupData)
         let view = embedInNavController ? embedInNavigationController() : _view
         window?.rootViewController = view
@@ -32,7 +38,7 @@ open class Router: RouterProtocol {
         }
     }
     
-    open func show(from: UIViewController, embedInNavController: Bool = false, setupData: Any? = nil) {
+    public func show(from: UIViewController, embedInNavController: Bool = false, setupData: Any? = nil) {
         process(setupData: setupData)
         let view = embedInNavController ? embedInNavigationController() : _view
         from.show(view, sender: nil)
@@ -42,21 +48,6 @@ open class Router: RouterProtocol {
         process(setupData: setupData)
         addAsChildView(ofView: containerView, insideContainer: targetView)
     }
-    
-    required public init() { }
-}
-
-//MARK: - Process possible setup data
-private extension Router {
-    func process(setupData: Any?) {
-        if let data = setupData {
-            _presenter.setupView(data: data)
-        }
-    }
-}
-
-//MARK: - Embed view in navigation controller
-public extension Router {
     private func getNavigationController() -> UINavigationController? {
         if let nav = _view.navigationController {
             return nav
@@ -71,10 +62,7 @@ public extension Router {
     func embedInNavigationController() -> UINavigationController {
         return getNavigationController() ?? UINavigationController(rootViewController: _view)
     }
-}
-
-//MARK: - Embed view in a container view
-public extension Router {
+    
     func addAsChildView(ofView parentView: UIViewController, insideContainer containerView: UIView) {
         parentView.addChildViewController(_view)
         containerView.addSubview(_view.view)

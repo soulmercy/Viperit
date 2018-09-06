@@ -6,12 +6,7 @@
 //  Copyright © 2016 Ferran Abelló. All rights reserved.
 //
 
-public protocol PresenterProtocol {
-    var _interactor: Interactor! { get set }
-    var _view: UserInterface! { get set }
-    var _router: Router! { get set }
-        
-    func setupView(data: Any)
+public protocol ViewControllerPresenterProtocol {
     func viewHasLoaded()
     func viewIsAboutToAppear()
     func viewHasAppeared()
@@ -19,17 +14,21 @@ public protocol PresenterProtocol {
     func viewHasDisappeared()
 }
 
-open class Presenter: PresenterProtocol {
-    public var _interactor: Interactor!
-    public weak var _view: UserInterface!
-    public var _router: Router!
-    
-    required public init() { }
-    
+open class Presenter: PresenterProtocol, ViewControllerPresenterProtocol {
+    public typealias I = Interactor
+    public typealias V = UserInterface
+    public typealias R = Router
+
+    public var _interactor: I!
+    public weak var _view: V!
+    public var _router: R!
+
+    required public init() {}
+
     open func setupView(data: Any) {
         print(ViperitError.methodNotImplemented.description)
     }
-    
+
     open func viewHasLoaded() {}
     open func viewIsAboutToAppear() {}
     open func viewHasAppeared() {}

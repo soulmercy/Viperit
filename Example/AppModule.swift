@@ -13,4 +13,11 @@ import Viperit
 enum AppModules: String, ViperitModule {
     case home
     case second
+    
+    var viewType: ViperitViewType {
+        switch self {
+        default:
+            return .storyboard
+        }
+    }
 }

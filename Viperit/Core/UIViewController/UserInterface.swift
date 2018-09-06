@@ -8,16 +8,12 @@
 
 import UIKit
 
-public protocol UserInterfaceProtocol {
-    var _presenter: Presenter! { get set }
-    var _displayData: DisplayData! { get set }
-}
-
-
 open class UserInterface: UIViewController, UserInterfaceProtocol {
-    public var _presenter: Presenter!
+    public typealias P = Presenter
+
+    public var _presenter: P!
     public var _displayData: DisplayData!
-    
+
     open override func viewDidLoad() {
         super.viewDidLoad()
         _presenter.viewHasLoaded()
